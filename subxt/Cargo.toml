@@ -41,7 +41,7 @@ scale-bits = "0.3"
 scale-decode = "0.4.0"
 futures = { version = "0.3.26", default-features = false, features = ["std"] }
 hex = "0.4.3"
-jsonrpsee = { version = "0.16", optional = true, features = ["jsonrpsee-types"] }
+jsonrpsee = { version = "0.16.2", optional = true, features = ["jsonrpsee-types"] }
 serde = { version = "1.0.124", features = ["derive"] }
 serde_json = { version = "1.0.92", features = ["raw_value"] }
 thiserror = "1.0.24"
@@ -63,8 +63,8 @@ base58 = { version = "0.2.0" }
 blake2 = { version = "0.10.4", default-features = false }
 
 # These are only included is "substrate-compat" is enabled.
-sp-core = { version = "11.0.0", default-features = false, optional = true }
-sp-runtime = { version = "12.0.0", optional = true }
+sp-core = { default-features = false, git = "ssh://git@github.com/hussein-aitlahcen/darth", rev = "cb440f9897428ecb453b307df4268ecf17404336", optional = true }
+sp-runtime = { git = "ssh://git@github.com/hussein-aitlahcen/darth", rev = "cb440f9897428ecb453b307df4268ecf17404336", optional = true }
 
 [target.wasm32-unknown-unknown.dependencies]
 getrandom = { version = "0.2", features = ["js"] }
@@ -74,7 +74,7 @@ bitvec = "1"
 codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = ["derive", "full", "bit-vec"] }
 scale-info = { version = "2.0.0", features = ["bit-vec"] }
 tokio = { version = "1.25", features = ["macros", "time", "rt-multi-thread"] }
-sp-core = { version = "11.0.0", default-features = false }
-sp-runtime = { version = "12.0.0" }
-sp-keyring = "12.0.0"
-sp-version = "10.0.0"
+sp-core = { git = "ssh://git@github.com/hussein-aitlahcen/darth", rev = "cb440f9897428ecb453b307df4268ecf17404336" }
+sp-runtime = { git = "ssh://git@github.com/hussein-aitlahcen/darth", rev = "cb440f9897428ecb453b307df4268ecf17404336" }
+sp-keyring = { git = "ssh://git@github.com/hussein-aitlahcen/darth", rev = "cb440f9897428ecb453b307df4268ecf17404336" }
+sp-version = { git = "ssh://git@github.com/hussein-aitlahcen/darth", rev = "cb440f9897428ecb453b307df4268ecf17404336" }
